@@ -1,0 +1,1494 @@
+{
+	operationalLayers: [{
+		id: "MovementAnalysis_8146",
+		layerType: "ArcGISFeatureLayer",
+		url: "{ServiceURL}/NationalIntelligence/MovementAnalysis/FeatureServer/305",
+		visibility: false,
+		opacity: 1,
+		mode: 1,
+		title: "Transits",
+		itemId: "b2ff2e4e99db4373b5d893d19e05f44d",
+		popupInfo: {
+			title: "Transits: {locationscale}",
+			fieldInfos: [{
+				fieldName: "objectid",
+				label: "OBJECTID",
+				isEditable: false,
+				tooltip: "",
+				visible: false,
+				format: null,
+				stringFieldOption: "textbox"
+			},
+			{
+				fieldName: "locationscale",
+				label: "LocationScale",
+				isEditable: true,
+				tooltip: "",
+				visible: true,
+				format: null,
+				stringFieldOption: "textbox"
+			},
+			{
+				fieldName: "individualid",
+				label: "IndividualID",
+				isEditable: true,
+				tooltip: "",
+				visible: true,
+				format: null,
+				stringFieldOption: "textbox"
+			},
+			{
+				fieldName: "startlocationid",
+				label: "StartLocationID",
+				isEditable: true,
+				tooltip: "",
+				visible: true,
+				format: null,
+				stringFieldOption: "textbox"
+			},
+			{
+				fieldName: "finishlocaitonid",
+				label: "FinishLocaitonID",
+				isEditable: true,
+				tooltip: "",
+				visible: true,
+				format: null,
+				stringFieldOption: "textbox"
+			},
+			{
+				fieldName: "starttime",
+				label: "StartTime",
+				isEditable: true,
+				tooltip: "",
+				visible: true,
+				format: {
+					dateFormat: "longMonthDayYear"
+				},
+				stringFieldOption: "textbox"
+			},
+			{
+				fieldName: "endtime",
+				label: "EndTime",
+				isEditable: true,
+				tooltip: "",
+				visible: true,
+				format: {
+					dateFormat: "longMonthDayYear"
+				},
+				stringFieldOption: "textbox"
+			},
+			{
+				fieldName: "duration",
+				label: "Duration",
+				isEditable: true,
+				tooltip: "",
+				visible: true,
+				format: {
+					places: 0,
+					digitSeparator: true
+				},
+				stringFieldOption: "textbox"
+			},
+			{
+				fieldName: "transitgeometrycalc",
+				label: "TransitGeometryCalc",
+				isEditable: true,
+				tooltip: "",
+				visible: true,
+				format: null,
+				stringFieldOption: "textbox"
+			},
+			{
+				fieldName: "patternid",
+				label: "PatternID",
+				isEditable: true,
+				tooltip: "",
+				visible: true,
+				format: null,
+				stringFieldOption: "textbox"
+			}],
+			description: null,
+			showAttachments: true,
+			mediaInfos: []
+		}
+	},
+	{
+		id: "MovementAnalysis_3451",
+		layerType: "ArcGISFeatureLayer",
+		url: "{ServiceURL}/NationalIntelligence/MovementAnalysis/FeatureServer/304",
+		visibility: false,
+		opacity: 1,
+		mode: 1,
+		title: "Crossing Point",
+		itemId: "b2ff2e4e99db4373b5d893d19e05f44d",
+		popupInfo: {
+			title: "Crossing Point: {locationscale}",
+			fieldInfos: [{
+				fieldName: "objectid",
+				label: "OBJECTID",
+				isEditable: false,
+				tooltip: "",
+				visible: false,
+				format: null,
+				stringFieldOption: "textbox"
+			},
+			{
+				fieldName: "locationscale",
+				label: "Location Scale",
+				isEditable: true,
+				tooltip: "",
+				visible: true,
+				format: null,
+				stringFieldOption: "textbox"
+			},
+			{
+				fieldName: "individualid",
+				label: "Individual ID",
+				isEditable: true,
+				tooltip: "",
+				visible: true,
+				format: null,
+				stringFieldOption: "textbox"
+			},
+			{
+				fieldName: "locationid",
+				label: "Start Location ID",
+				isEditable: true,
+				tooltip: "",
+				visible: true,
+				format: null,
+				stringFieldOption: "textbox"
+			},
+			{
+				fieldName: "starttime",
+				label: "Start Time",
+				isEditable: true,
+				tooltip: "",
+				visible: true,
+				format: {
+					dateFormat: "longMonthDayYear"
+				},
+				stringFieldOption: "textbox"
+			},
+			{
+				fieldName: "endtime",
+				label: "End Time",
+				isEditable: true,
+				tooltip: "",
+				visible: true,
+				format: {
+					dateFormat: "longMonthDayYear"
+				},
+				stringFieldOption: "textbox"
+			},
+			{
+				fieldName: "duration",
+				label: "Duration",
+				isEditable: true,
+				tooltip: "",
+				visible: true,
+				format: {
+					places: 0,
+					digitSeparator: true
+				},
+				stringFieldOption: "textbox"
+			},
+			{
+				fieldName: "crossingcalc",
+				label: "Crossing Point Calc",
+				isEditable: true,
+				tooltip: "",
+				visible: true,
+				format: null,
+				stringFieldOption: "textbox"
+			}],
+			description: null,
+			showAttachments: true,
+			mediaInfos: []
+		}
+	},
+	{
+		id: "MovementAnalysis_5219",
+		layerType: "ArcGISFeatureLayer",
+		url: "{ServiceURL}/NationalIntelligence/MovementAnalysis/FeatureServer/303",
+		visibility: false,
+		opacity: 1,
+		mode: 1,
+		title: "Pattern Location",
+		itemId: "b2ff2e4e99db4373b5d893d19e05f44d",
+		popupInfo: {
+			title: "Pattern Location: {locationid}",
+			fieldInfos: [{
+				fieldName: "objectid",
+				label: "OBJECTID",
+				isEditable: false,
+				tooltip: "",
+				visible: false,
+				format: null,
+				stringFieldOption: "textbox"
+			},
+			{
+				fieldName: "locationscale",
+				label: "LocationScale",
+				isEditable: true,
+				tooltip: "",
+				visible: true,
+				format: null,
+				stringFieldOption: "textbox"
+			},
+			{
+				fieldName: "locationid",
+				label: "LocationID",
+				isEditable: true,
+				tooltip: "",
+				visible: true,
+				format: null,
+				stringFieldOption: "textbox"
+			},
+			{
+				fieldName: "individualid",
+				label: "IndividualID",
+				isEditable: true,
+				tooltip: "",
+				visible: true,
+				format: null,
+				stringFieldOption: "textbox"
+			},
+			{
+				fieldName: "previouslocationid",
+				label: "PreviousLocationID",
+				isEditable: true,
+				tooltip: "",
+				visible: true,
+				format: null,
+				stringFieldOption: "textbox"
+			},
+			{
+				fieldName: "movementpattern",
+				label: "MovementPattern",
+				isEditable: true,
+				tooltip: "",
+				visible: true,
+				format: null,
+				stringFieldOption: "textbox"
+			},
+			{
+				fieldName: "temporalcondiition",
+				label: "TemporalSignificance",
+				isEditable: true,
+				tooltip: "",
+				visible: true,
+				format: null,
+				stringFieldOption: "textbox"
+			},
+			{
+				fieldName: "temporalsignificance",
+				label: "TemporalSignificance",
+				isEditable: true,
+				tooltip: "",
+				visible: true,
+				format: {
+					places: 0,
+					digitSeparator: true
+				},
+				stringFieldOption: "textbox"
+			},
+			{
+				fieldName: "locationcondition",
+				label: "LocationCondition",
+				isEditable: true,
+				tooltip: "",
+				visible: true,
+				format: null,
+				stringFieldOption: "textbox"
+			},
+			{
+				fieldName: "locationsignificance",
+				label: "LocationSignificance",
+				isEditable: true,
+				tooltip: "",
+				visible: true,
+				format: {
+					places: 0,
+					digitSeparator: true
+				},
+				stringFieldOption: "textbox"
+			},
+			{
+				fieldName: "sequencesignificance",
+				label: "Sequence",
+				isEditable: true,
+				tooltip: "",
+				visible: true,
+				format: {
+					places: 0,
+					digitSeparator: true
+				},
+				stringFieldOption: "textbox"
+			},
+			{
+				fieldName: "patterncondition",
+				label: "PatternCondition",
+				isEditable: true,
+				tooltip: "",
+				visible: true,
+				format: null,
+				stringFieldOption: "textbox"
+			},
+			{
+				fieldName: "patternconditionsignificance",
+				label: "PatternConditionSignificance",
+				isEditable: true,
+				tooltip: "",
+				visible: true,
+				format: {
+					places: 0,
+					digitSeparator: true
+				},
+				stringFieldOption: "textbox"
+			},
+			{
+				fieldName: "globalid",
+				label: "globalid",
+				isEditable: false,
+				tooltip: "",
+				visible: false,
+				format: null,
+				stringFieldOption: "textbox"
+			}],
+			description: null,
+			showAttachments: true,
+			mediaInfos: []
+		}
+	},
+	{
+		id: "MovementAnalysis_921",
+		layerType: "ArcGISFeatureLayer",
+		url: "{ServiceURL}/NationalIntelligence/MovementAnalysis/FeatureServer/205",
+		visibility: false,
+		opacity: 1,
+		mode: 1,
+		title: "Boundaries",
+		itemId: "b2ff2e4e99db4373b5d893d19e05f44d",
+		popupInfo: {
+			title: "Boundaries: {locationname}",
+			fieldInfos: [{
+				fieldName: "objectid",
+				label: "OBJECTID",
+				isEditable: false,
+				tooltip: "",
+				visible: false,
+				format: null,
+				stringFieldOption: "textbox"
+			},
+			{
+				fieldName: "locationid",
+				label: "LocationID",
+				isEditable: true,
+				tooltip: "",
+				visible: true,
+				format: null,
+				stringFieldOption: "textbox"
+			},
+			{
+				fieldName: "locationname",
+				label: "LocationName",
+				isEditable: true,
+				tooltip: "",
+				visible: true,
+				format: null,
+				stringFieldOption: "textbox"
+			},
+			{
+				fieldName: "locationcategory",
+				label: "LocationCategory",
+				isEditable: true,
+				tooltip: "",
+				visible: true,
+				format: null,
+				stringFieldOption: "textbox"
+			},
+			{
+				fieldName: "locationactivity",
+				label: "Location Activity",
+				isEditable: true,
+				tooltip: "",
+				visible: true,
+				format: null,
+				stringFieldOption: "textbox"
+			},
+			{
+				fieldName: "locationmodel",
+				label: "locationmodel",
+				isEditable: true,
+				tooltip: "",
+				visible: true,
+				format: null,
+				stringFieldOption: "textbox"
+			},
+			{
+				fieldName: "locationsignificance",
+				label: "locationsignificance",
+				isEditable: true,
+				tooltip: "",
+				visible: true,
+				format: {
+					places: 0,
+					digitSeparator: true
+				},
+				stringFieldOption: "textbox"
+			},
+			{
+				fieldName: "locationsource",
+				label: "LocationSource",
+				isEditable: true,
+				tooltip: "",
+				visible: true,
+				format: null,
+				stringFieldOption: "textbox"
+			}],
+			description: null,
+			showAttachments: true,
+			mediaInfos: []
+		}
+	},
+	{
+		id: "MovementAnalysis_4406",
+		layerType: "ArcGISFeatureLayer",
+		url: "{ServiceURL}/NationalIntelligence/MovementAnalysis/FeatureServer/204",
+		visibility: false,
+		opacity: 1,
+		mode: 1,
+		title: "Neighborhoods",
+		itemId: "b2ff2e4e99db4373b5d893d19e05f44d",
+		popupInfo: {
+			title: "Neighborhoods: {locationname}",
+			fieldInfos: [{
+				fieldName: "objectid",
+				label: "OBJECTID",
+				isEditable: false,
+				tooltip: "",
+				visible: false,
+				format: null,
+				stringFieldOption: "textbox"
+			},
+			{
+				fieldName: "locationid",
+				label: "LocationID",
+				isEditable: true,
+				tooltip: "",
+				visible: true,
+				format: null,
+				stringFieldOption: "textbox"
+			},
+			{
+				fieldName: "locationname",
+				label: "LocationName",
+				isEditable: true,
+				tooltip: "",
+				visible: true,
+				format: null,
+				stringFieldOption: "textbox"
+			},
+			{
+				fieldName: "locationcategory",
+				label: "LocationCategory",
+				isEditable: true,
+				tooltip: "",
+				visible: true,
+				format: null,
+				stringFieldOption: "textbox"
+			},
+			{
+				fieldName: "locationactivity",
+				label: "Location Activity",
+				isEditable: true,
+				tooltip: "",
+				visible: true,
+				format: null,
+				stringFieldOption: "textbox"
+			},
+			{
+				fieldName: "locationmodel",
+				label: "locationmodel",
+				isEditable: true,
+				tooltip: "",
+				visible: true,
+				format: null,
+				stringFieldOption: "textbox"
+			},
+			{
+				fieldName: "locationsignificance",
+				label: "locationsignificance",
+				isEditable: true,
+				tooltip: "",
+				visible: true,
+				format: {
+					places: 0,
+					digitSeparator: true
+				},
+				stringFieldOption: "textbox"
+			},
+			{
+				fieldName: "locationsource",
+				label: "LocationSource",
+				isEditable: true,
+				tooltip: "",
+				visible: true,
+				format: null,
+				stringFieldOption: "textbox"
+			}],
+			description: null,
+			showAttachments: true,
+			mediaInfos: []
+		}
+	},
+	{
+		id: "MovementAnalysis_2740",
+		layerType: "ArcGISFeatureLayer",
+		url: "{ServiceURL}/NationalIntelligence/MovementAnalysis/FeatureServer/203",
+		visibility: false,
+		opacity: 1,
+		mode: 1,
+		title: "Unknown Locations",
+		itemId: "b2ff2e4e99db4373b5d893d19e05f44d",
+		popupInfo: {
+			title: "Unknown Locations: {locationname}",
+			fieldInfos: [{
+				fieldName: "objectid",
+				label: "OBJECTID",
+				isEditable: false,
+				tooltip: "",
+				visible: false,
+				format: null,
+				stringFieldOption: "textbox"
+			},
+			{
+				fieldName: "locationid",
+				label: "Location ID",
+				isEditable: true,
+				tooltip: "",
+				visible: true,
+				format: null,
+				stringFieldOption: "textbox"
+			},
+			{
+				fieldName: "locationname",
+				label: "Location Name",
+				isEditable: true,
+				tooltip: "",
+				visible: true,
+				format: null,
+				stringFieldOption: "textbox"
+			},
+			{
+				fieldName: "locationcategory",
+				label: "Location Category",
+				isEditable: true,
+				tooltip: "",
+				visible: true,
+				format: null,
+				stringFieldOption: "textbox"
+			},
+			{
+				fieldName: "locationsource",
+				label: "Location Source",
+				isEditable: true,
+				tooltip: "",
+				visible: true,
+				format: null,
+				stringFieldOption: "textbox"
+			}],
+			description: null,
+			showAttachments: true,
+			mediaInfos: []
+		}
+	},
+	{
+		id: "MovementAnalysis_1035",
+		layerType: "ArcGISFeatureLayer",
+		url: "{ServiceURL}/NationalIntelligence/MovementAnalysis/FeatureServer/202",
+		visibility: false,
+		opacity: 1,
+		mode: 1,
+		title: "Suspicious Place Areas",
+		itemId: "b2ff2e4e99db4373b5d893d19e05f44d",
+		popupInfo: {
+			title: "Suspicious Place Areas: {locationname}",
+			fieldInfos: [{
+				fieldName: "objectid",
+				label: "OBJECTID",
+				isEditable: false,
+				tooltip: "",
+				visible: false,
+				format: null,
+				stringFieldOption: "textbox"
+			},
+			{
+				fieldName: "locationid",
+				label: "LocationID",
+				isEditable: true,
+				tooltip: "",
+				visible: true,
+				format: null,
+				stringFieldOption: "textbox"
+			},
+			{
+				fieldName: "locationname",
+				label: "LocationName",
+				isEditable: true,
+				tooltip: "",
+				visible: true,
+				format: null,
+				stringFieldOption: "textbox"
+			},
+			{
+				fieldName: "locationcategory",
+				label: "LocationCategory",
+				isEditable: true,
+				tooltip: "",
+				visible: true,
+				format: null,
+				stringFieldOption: "textbox"
+			},
+			{
+				fieldName: "locationactivity",
+				label: "Location Activity",
+				isEditable: true,
+				tooltip: "",
+				visible: true,
+				format: null,
+				stringFieldOption: "textbox"
+			},
+			{
+				fieldName: "locationmodel",
+				label: "locationmodel",
+				isEditable: true,
+				tooltip: "",
+				visible: true,
+				format: null,
+				stringFieldOption: "textbox"
+			},
+			{
+				fieldName: "locationsignificance",
+				label: "locationsignificance",
+				isEditable: true,
+				tooltip: "",
+				visible: true,
+				format: {
+					places: 0,
+					digitSeparator: true
+				},
+				stringFieldOption: "textbox"
+			},
+			{
+				fieldName: "locationsource",
+				label: "LocationSource",
+				isEditable: true,
+				tooltip: "",
+				visible: true,
+				format: null,
+				stringFieldOption: "textbox"
+			}],
+			description: null,
+			showAttachments: true,
+			mediaInfos: []
+		}
+	},
+	{
+		id: "MovementAnalysis_4621",
+		layerType: "ArcGISFeatureLayer",
+		url: "{ServiceURL}/NationalIntelligence/MovementAnalysis/FeatureServer/201",
+		visibility: false,
+		opacity: 1,
+		mode: 1,
+		title: "Suspicious Place Points",
+		itemId: "b2ff2e4e99db4373b5d893d19e05f44d",
+		popupInfo: {
+			title: "Suspicious Place Points: {locationname}",
+			fieldInfos: [{
+				fieldName: "objectid",
+				label: "OBJECTID",
+				isEditable: false,
+				tooltip: "",
+				visible: false,
+				format: null,
+				stringFieldOption: "textbox"
+			},
+			{
+				fieldName: "locationid",
+				label: "LocationID",
+				isEditable: true,
+				tooltip: "",
+				visible: true,
+				format: null,
+				stringFieldOption: "textbox"
+			},
+			{
+				fieldName: "locationname",
+				label: "LocationName",
+				isEditable: true,
+				tooltip: "",
+				visible: true,
+				format: null,
+				stringFieldOption: "textbox"
+			},
+			{
+				fieldName: "locationcategory",
+				label: "LocationCategory",
+				isEditable: true,
+				tooltip: "",
+				visible: true,
+				format: null,
+				stringFieldOption: "textbox"
+			},
+			{
+				fieldName: "locationactivity",
+				label: "Location Activity",
+				isEditable: true,
+				tooltip: "",
+				visible: true,
+				format: null,
+				stringFieldOption: "textbox"
+			},
+			{
+				fieldName: "locationmodel",
+				label: "locationmodel",
+				isEditable: true,
+				tooltip: "",
+				visible: true,
+				format: null,
+				stringFieldOption: "textbox"
+			},
+			{
+				fieldName: "locationsignificance",
+				label: "locationsignificance",
+				isEditable: true,
+				tooltip: "",
+				visible: true,
+				format: {
+					places: 0,
+					digitSeparator: true
+				},
+				stringFieldOption: "textbox"
+			},
+			{
+				fieldName: "locationsource",
+				label: "LocationSource",
+				isEditable: true,
+				tooltip: "",
+				visible: true,
+				format: null,
+				stringFieldOption: "textbox"
+			}],
+			description: null,
+			showAttachments: true,
+			mediaInfos: []
+		}
+	},
+	{
+		id: "MovementAnalysis_9264",
+		layerType: "ArcGISFeatureLayer",
+		url: "{ServiceURL}/NationalIntelligence/MovementAnalysis/FeatureServer/506",
+		visibility: true,
+		opacity: 1,
+		mode: 1,
+		title: "Monitored Locations",
+		itemId: "25c33e7f5d2242e18a7503bbe3306450",
+		layerDefinition: {
+			drawingInfo: {
+				renderer: {
+					type: "simple",
+					label: "",
+					description: "",
+					symbol: {
+						color: [85,
+						255,
+						0,
+						155],
+						outline: {
+							color: [230,
+							0,
+							0,
+							255],
+							width: 1,
+							type: "esriSLS",
+							style: "esriSLSSolid"
+						},
+						type: "esriSFS",
+						style: "esriSFSSolid"
+					}
+				}
+			}
+		},
+		popupInfo: {
+			title: "MonitoredLocations: {locationname}",
+			fieldInfos: [{
+				fieldName: "objectid",
+				label: "OBJECTID",
+				isEditable: false,
+				tooltip: "",
+				visible: false,
+				format: null,
+				stringFieldOption: "textbox"
+			},
+			{
+				fieldName: "locationid",
+				label: "LocationID",
+				isEditable: true,
+				tooltip: "",
+				visible: true,
+				format: null,
+				stringFieldOption: "textbox"
+			},
+			{
+				fieldName: "locationname",
+				label: "LocationName",
+				isEditable: true,
+				tooltip: "",
+				visible: true,
+				format: null,
+				stringFieldOption: "textbox"
+			},
+			{
+				fieldName: "locationcategory",
+				label: "LocationCategory",
+				isEditable: true,
+				tooltip: "",
+				visible: true,
+				format: null,
+				stringFieldOption: "textbox"
+			},
+			{
+				fieldName: "locationactivity",
+				label: "Location Activity",
+				isEditable: true,
+				tooltip: "",
+				visible: true,
+				format: null,
+				stringFieldOption: "textbox"
+			},
+			{
+				fieldName: "locationsignificance",
+				label: "locationsignificance",
+				isEditable: true,
+				tooltip: "",
+				visible: true,
+				format: {
+					places: 0,
+					digitSeparator: true
+				},
+				stringFieldOption: "textbox"
+			},
+			{
+				fieldName: "locationsource",
+				label: "LocationSource",
+				isEditable: true,
+				tooltip: "",
+				visible: true,
+				format: null,
+				stringFieldOption: "textbox"
+			},
+			{
+				fieldName: "locationalertstatus",
+				label: "LocationAlertStatus",
+				isEditable: true,
+				tooltip: "",
+				visible: true,
+				format: null,
+				stringFieldOption: "textbox"
+			},
+			{
+				fieldName: "name",
+				label: "name",
+				isEditable: true,
+				tooltip: "",
+				visible: true,
+				format: null,
+				stringFieldOption: "textbox"
+			}],
+			description: null,
+			showAttachments: true,
+			mediaInfos: []
+		}
+	},
+	{
+		id: "MovementAnalysis_1614",
+		layerType: "ArcGISFeatureLayer",
+		url: "{ServiceURL}/NationalIntelligence/MovementAnalysis/FeatureServer/302",
+		visibility: true,
+		opacity: 1,
+		mode: 1,
+		title: "Stay Location Area",
+		itemId: "b2ff2e4e99db4373b5d893d19e05f44d",
+		refreshInterval: 0.1,
+		timeAnimation: false,
+		disablePopup: true
+	},
+	{
+		id: "MovementAnalysis_4207",
+		layerType: "ArcGISFeatureLayer",
+		url: "{ServiceURL}/NationalIntelligence/MovementAnalysis/FeatureServer/301",
+		visibility: true,
+		opacity: 1,
+		mode: 1,
+		title: "Stay Location Point",
+		itemId: "b2ff2e4e99db4373b5d893d19e05f44d",
+		refreshInterval: 0.1,
+		popupInfo: {
+			title: "{individualid} at Stay Location {locationid}",
+			fieldInfos: [{
+				fieldName: "objectid",
+				label: "OBJECTID",
+				isEditable: false,
+				isEditableOnLayer: false,
+				visible: false
+			},
+			{
+				fieldName: "locationscale",
+				label: "Location Scale",
+				isEditable: false,
+				isEditableOnLayer: true,
+				visible: false,
+				stringFieldOption: "textbox"
+			},
+			{
+				fieldName: "locationid",
+				label: "Location ID",
+				isEditable: true,
+				isEditableOnLayer: true,
+				visible: true,
+				stringFieldOption: "textbox"
+			},
+			{
+				fieldName: "previouslocaitonid",
+				label: "Previous Locaiton ID",
+				isEditable: true,
+				isEditableOnLayer: true,
+				visible: true,
+				stringFieldOption: "textbox"
+			},
+			{
+				fieldName: "starttime",
+				label: "Start Time",
+				isEditable: true,
+				isEditableOnLayer: true,
+				visible: true,
+				format: {
+					dateFormat: "shortDateShortTime",
+					timezone: "utc"
+				}
+			},
+			{
+				fieldName: "endtime",
+				label: "End Time",
+				isEditable: true,
+				isEditableOnLayer: true,
+				visible: true,
+				format: {
+					dateFormat: "shortDateShortTime",
+					timezone: "utc"
+				}
+			},
+			{
+				fieldName: "duration",
+				label: "Duration",
+				isEditable: true,
+				isEditableOnLayer: true,
+				visible: true,
+				format: {
+					places: 0,
+					digitSeparator: true
+				}
+			},
+			{
+				fieldName: "locationcertainty",
+				label: "Location Certainty",
+				isEditable: false,
+				isEditableOnLayer: true,
+				visible: false,
+				format: {
+					places: 0,
+					digitSeparator: true
+				}
+			},
+			{
+				fieldName: "valuecertainty",
+				label: "Value Certainty",
+				isEditable: false,
+				isEditableOnLayer: true,
+				visible: false,
+				format: {
+					places: 0,
+					digitSeparator: true
+				}
+			},
+			{
+				fieldName: "movementpattern",
+				label: "Movement Pattern",
+				isEditable: false,
+				isEditableOnLayer: true,
+				visible: false,
+				stringFieldOption: "textbox"
+			},
+			{
+				fieldName: "locationsource",
+				label: "Location Source",
+				isEditable: true,
+				isEditableOnLayer: true,
+				visible: true,
+				stringFieldOption: "textbox"
+			},
+			{
+				fieldName: "individualid",
+				label: "Individual ID",
+				isEditable: true,
+				isEditableOnLayer: true,
+				visible: true,
+				stringFieldOption: "textbox"
+			},
+			{
+				fieldName: "source",
+				label: "Source",
+				isEditable: true,
+				isEditableOnLayer: true,
+				visible: true,
+				stringFieldOption: "textbox"
+			},
+			{
+				fieldName: "combinedid",
+				label: "Combined ID",
+				isEditable: true,
+				isEditableOnLayer: true,
+				visible: true,
+				stringFieldOption: "textbox"
+			},
+			{
+				fieldName: "sourcetype",
+				label: "Source Type",
+				isEditable: true,
+				isEditableOnLayer: true,
+				visible: true,
+				stringFieldOption: "textbox"
+			}],
+			description: null,
+			showAttachments: false,
+			mediaInfos: []
+		}
+	}],
+	baseMap: {
+		baseMapLayers: [{
+			id: "layer2",
+			layerType: "ArcGISTiledMapServiceLayer",
+			opacity: 1,
+			visibility: true,
+			url: "{ServiceURL}/Basemaps/DarkGreyCanvas/MapServer",
+			itemId: "030a8ec8848f4c5ab4fafb890977eee1"
+		}],
+		title: "Dark Grey Canvas"
+	},
+	spatialReference: {
+		wkid: 102100
+	},
+	widgets: {
+		timeSlider: {
+			properties: {
+				startTime: 978307200000,
+				endTime: 978307261000,
+				thumbCount: 2,
+				thumbMovingRate: 2000,
+				timeStopInterval: {
+					interval: 6,
+					units: "esriTimeUnitsSeconds"
+				}
+			}
+		}
+	},
+	version: "2.1",
+	tables: [{
+		url: "{ServiceURL}/NationalIntelligence/MovementAnalysis/FeatureServer/504",
+		id: "MovementAnalysis_6588",
+		title: "MovementAnalysis - SourceConfidence",
+		itemId: "b2ff2e4e99db4373b5d893d19e05f44d",
+		popupInfo: {
+			title: "SourceConfidence: {sourceid}",
+			fieldInfos: [{
+				fieldName: "objectid",
+				label: "OBJECTID",
+				isEditable: false,
+				tooltip: "",
+				visible: false,
+				format: null,
+				stringFieldOption: "textbox"
+			},
+			{
+				fieldName: "sourceid",
+				label: "DeviceID",
+				isEditable: true,
+				tooltip: "",
+				visible: true,
+				format: null,
+				stringFieldOption: "textbox"
+			},
+			{
+				fieldName: "confidence",
+				label: "OwnerID",
+				isEditable: true,
+				tooltip: "",
+				visible: true,
+				format: null,
+				stringFieldOption: "textbox"
+			}],
+			description: null,
+			showAttachments: true,
+			mediaInfos: []
+		}
+	},
+	{
+		url: "{ServiceURL}/NationalIntelligence/MovementAnalysis/FeatureServer/503",
+		id: "MovementAnalysis_395",
+		title: "MovementAnalysis - DevicePlatform",
+		itemId: "b2ff2e4e99db4373b5d893d19e05f44d",
+		popupInfo: {
+			title: "DevicePlatform: {deviceid}",
+			fieldInfos: [{
+				fieldName: "objectid",
+				label: "OBJECTID",
+				isEditable: false,
+				tooltip: "",
+				visible: false,
+				format: null,
+				stringFieldOption: "textbox"
+			},
+			{
+				fieldName: "deviceid",
+				label: "DeviceID",
+				isEditable: true,
+				tooltip: "",
+				visible: true,
+				format: null,
+				stringFieldOption: "textbox"
+			},
+			{
+				fieldName: "platformid",
+				label: "OwnerID",
+				isEditable: true,
+				tooltip: "",
+				visible: true,
+				format: null,
+				stringFieldOption: "textbox"
+			}],
+			description: null,
+			showAttachments: true,
+			mediaInfos: []
+		}
+	},
+	{
+		url: "{ServiceURL}/NationalIntelligence/MovementAnalysis/FeatureServer/502",
+		id: "MovementAnalysis_4565",
+		title: "MovementAnalysis - DeviceCharacteristic",
+		itemId: "b2ff2e4e99db4373b5d893d19e05f44d",
+		popupInfo: {
+			title: "DeviceCharacteristic: {deviceid}",
+			fieldInfos: [{
+				fieldName: "objectid",
+				label: "OBJECTID",
+				isEditable: false,
+				tooltip: "",
+				visible: false,
+				format: null,
+				stringFieldOption: "textbox"
+			},
+			{
+				fieldName: "deviceid",
+				label: "Device ID",
+				isEditable: true,
+				tooltip: "",
+				visible: true,
+				format: null,
+				stringFieldOption: "textbox"
+			},
+			{
+				fieldName: "devicetype",
+				label: "Device Type",
+				isEditable: true,
+				tooltip: "",
+				visible: true,
+				format: null,
+				stringFieldOption: "textbox"
+			},
+			{
+				fieldName: "devicerange",
+				label: "Device Range",
+				isEditable: true,
+				tooltip: "",
+				visible: true,
+				format: {
+					places: 0,
+					digitSeparator: true
+				},
+				stringFieldOption: "textbox"
+			},
+			{
+				fieldName: "deviceaccuracy",
+				label: "Device Accuracy",
+				isEditable: true,
+				tooltip: "",
+				visible: true,
+				format: {
+					places: 0,
+					digitSeparator: true
+				},
+				stringFieldOption: "textbox"
+			},
+			{
+				fieldName: "devicemanufacturer",
+				label: "Device Manufacturer",
+				isEditable: true,
+				tooltip: "",
+				visible: true,
+				format: null,
+				stringFieldOption: "textbox"
+			}],
+			description: null,
+			showAttachments: true,
+			mediaInfos: []
+		}
+	},
+	{
+		url: "{ServiceURL}/NationalIntelligence/MovementAnalysis/FeatureServer/504",
+		id: "MovementAnalysis_8337",
+		title: "MovementAnalysis - SourceConfidence",
+		itemId: "25c33e7f5d2242e18a7503bbe3306450",
+		popupInfo: {
+			title: "SourceConfidence: {sourceid}",
+			fieldInfos: [{
+				fieldName: "objectid",
+				label: "OBJECTID",
+				isEditable: false,
+				tooltip: "",
+				visible: false,
+				format: null,
+				stringFieldOption: "textbox"
+			},
+			{
+				fieldName: "sourceid",
+				label: "DeviceID",
+				isEditable: true,
+				tooltip: "",
+				visible: true,
+				format: null,
+				stringFieldOption: "textbox"
+			},
+			{
+				fieldName: "confidence",
+				label: "OwnerID",
+				isEditable: true,
+				tooltip: "",
+				visible: true,
+				format: null,
+				stringFieldOption: "textbox"
+			}],
+			description: null,
+			showAttachments: true,
+			mediaInfos: []
+		}
+	},
+	{
+		url: "{ServiceURL}/NationalIntelligence/MovementAnalysis/FeatureServer/503",
+		id: "MovementAnalysis_8959",
+		title: "MovementAnalysis - DevicePlatform",
+		itemId: "25c33e7f5d2242e18a7503bbe3306450",
+		popupInfo: {
+			title: "DevicePlatform: {deviceid}",
+			fieldInfos: [{
+				fieldName: "objectid",
+				label: "OBJECTID",
+				isEditable: false,
+				tooltip: "",
+				visible: false,
+				format: null,
+				stringFieldOption: "textbox"
+			},
+			{
+				fieldName: "deviceid",
+				label: "DeviceID",
+				isEditable: true,
+				tooltip: "",
+				visible: true,
+				format: null,
+				stringFieldOption: "textbox"
+			},
+			{
+				fieldName: "platformid",
+				label: "OwnerID",
+				isEditable: true,
+				tooltip: "",
+				visible: true,
+				format: null,
+				stringFieldOption: "textbox"
+			}],
+			description: null,
+			showAttachments: true,
+			mediaInfos: []
+		}
+	},
+	{
+		url: "{ServiceURL}/NationalIntelligence/MovementAnalysis/FeatureServer/502",
+		id: "MovementAnalysis_126",
+		title: "MovementAnalysis - DeviceCharacteristic",
+		itemId: "25c33e7f5d2242e18a7503bbe3306450",
+		popupInfo: {
+			title: "DeviceCharacteristic: {deviceid}",
+			fieldInfos: [{
+				fieldName: "objectid",
+				label: "OBJECTID",
+				isEditable: false,
+				tooltip: "",
+				visible: false,
+				format: null,
+				stringFieldOption: "textbox"
+			},
+			{
+				fieldName: "deviceid",
+				label: "Device ID",
+				isEditable: true,
+				tooltip: "",
+				visible: true,
+				format: null,
+				stringFieldOption: "textbox"
+			},
+			{
+				fieldName: "devicetype",
+				label: "Device Type",
+				isEditable: true,
+				tooltip: "",
+				visible: true,
+				format: null,
+				stringFieldOption: "textbox"
+			},
+			{
+				fieldName: "devicerange",
+				label: "Device Range",
+				isEditable: true,
+				tooltip: "",
+				visible: true,
+				format: {
+					places: 0,
+					digitSeparator: true
+				},
+				stringFieldOption: "textbox"
+			},
+			{
+				fieldName: "deviceaccuracy",
+				label: "Device Accuracy",
+				isEditable: true,
+				tooltip: "",
+				visible: true,
+				format: {
+					places: 0,
+					digitSeparator: true
+				},
+				stringFieldOption: "textbox"
+			},
+			{
+				fieldName: "devicemanufacturer",
+				label: "Device Manufacturer",
+				isEditable: true,
+				tooltip: "",
+				visible: true,
+				format: null,
+				stringFieldOption: "textbox"
+			}],
+			description: null,
+			showAttachments: true,
+			mediaInfos: []
+		}
+	},
+	{
+		url: "{ServiceURL}/NationalIntelligence/MovementAnalysis/FeatureServer/501",
+		id: "MovementAnalysis_424",
+		title: "MovementAnalysis - DeviceOwner",
+		itemId: "25c33e7f5d2242e18a7503bbe3306450",
+		popupInfo: {
+			title: "DeviceOwner: {deviceid}",
+			fieldInfos: [{
+				fieldName: "objectid",
+				label: "OBJECTID",
+				isEditable: false,
+				tooltip: "",
+				visible: false,
+				format: null,
+				stringFieldOption: "textbox"
+			},
+			{
+				fieldName: "deviceid",
+				label: "DeviceID",
+				isEditable: true,
+				tooltip: "",
+				visible: true,
+				format: null,
+				stringFieldOption: "textbox"
+			},
+			{
+				fieldName: "individualid",
+				label: "OwnerID",
+				isEditable: true,
+				tooltip: "",
+				visible: true,
+				format: null,
+				stringFieldOption: "textbox"
+			}],
+			description: null,
+			showAttachments: true,
+			mediaInfos: []
+		}
+	}],
+	bookmarks: [{
+		extent: {
+			spatialReference: {
+				wkid: 102100,
+				latestWkid: 3857
+			},
+			xmax: -13489351.519357793,
+			xmin: -13602249.010134846,
+			ymax: 4424921.244009017,
+			ymin: 4366829.102512361
+		},
+		name: "Initial Extent"
+	}],
+	applicationProperties: {
+		viewing: {
+			routing: {
+				enabled: true
+			},
+			basemapGallery: {
+				enabled: true
+			},
+			measure: {
+				enabled: true
+			},
+			search: {
+				enabled: true,
+				disablePlaceFinder: false,
+				hintText: "Place or Address",
+				layers: [{
+					id: "KeyLocations_8848",
+					field: {
+						name: "name",
+						exactMatch: true,
+						type: "esriFieldTypeString"
+					}
+				},
+				{
+					id: "MovementAnalysis_1035",
+					field: {
+						name: "locationname",
+						exactMatch: true,
+						type: "esriFieldTypeString"
+					}
+				}]
+			}
+		}
+	}
+}

@@ -1,0 +1,563 @@
+{
+	addInIds: [],
+	interval: 30,
+	intervalType: "single",
+	desktopLayout: {
+		root: {
+			content: [{
+				content: [{
+					height: "396*",
+					type: "widget",
+					widgetId: "d8dd5e95-5587-49e8-9e9e-f1796d89e774"
+				},
+				{
+					height: "276*",
+					type: "widget",
+					widgetId: "0e9e5283-5abe-41bd-9b5f-6a6d79f107cf"
+				},
+				{
+					height: "337*",
+					type: "widget",
+					widgetId: "ebce88eb-3da2-40b5-a95a-0514cb1de172"
+				}],
+				orientation: "vertical",
+				type: "container",
+				width: "331*"
+			},
+			{
+				content: [{
+					height: "723*",
+					type: "widget",
+					widgetId: "3f936722-79eb-4bd9-8ae8-8246d54f67e5"
+				},
+				{
+					height: "276*",
+					type: "widget",
+					widgetId: "4514b17b-455c-471c-b116-40921d0ded95"
+				}],
+				orientation: "vertical",
+				type: "container",
+				width: "1186*"
+			},
+			{
+				content: [{
+					height: "333*",
+					type: "widget",
+					widgetId: "24dda80a-69aa-4869-b47a-4a4e67504d6c"
+				},
+				{
+					height: "278*",
+					type: "widget",
+					widgetId: "17a05e74-ba14-48ad-8c10-db73726a830d"
+				},
+				{
+					height: "388*",
+					type: "widget",
+					widgetId: "b4fff776-271d-464e-ad12-ba10d4295beb"
+				}],
+				orientation: "vertical",
+				type: "container",
+				width: "391*"
+			}],
+			orientation: "horizontal",
+			type: "container"
+		}
+	},
+	standaloneDataSources: [],
+	version: "1.2",
+	widgets: [{
+		caption: "Movement Analysis",
+		coordinateNotation: "esriLatLong",
+		featureActions: [],
+		id: "3f936722-79eb-4bd9-8ae8-8246d54f67e5",
+		mapId: {MapID},
+		mapTools: [{
+			queryCollections: [{
+				layerId: "MovementAnalysis_4207",
+				queries: [{
+					name: "Location Source: Monitored Location",
+					useCurrentExtent: false,
+					whereClause: "locationsource = 'Monitored Location'"
+				},
+				{
+					name: "Location Source: New Location",
+					useCurrentExtent: false,
+					whereClause: "locationsource = 'New Location'"
+				},
+				{
+					name: "Location Source: Observed",
+					useCurrentExtent: false,
+					whereClause: "locationsource = 'Observed'"
+				},
+				{
+					name: "Location Source: Suspicious Location",
+					useCurrentExtent: false,
+					whereClause: "locationsource = 'Suspicious Location'"
+				},
+				{
+					name: "Location Source: Unknown Location",
+					useCurrentExtent: false,
+					whereClause: "locationsource = 'Unknown Location'"
+				}]
+			}],
+			type: "layerFilteringTool"
+		},
+		{
+			type: "mapContentsTool"
+		},
+		{
+			coordinateNotations: ["esriLatLong"],
+			type: "placeFinderTool"
+		},
+		{
+			type: "bookmarksTool"
+		},
+		{
+			type: "basemapGalleryTool"
+		}],
+		dataSources: [{
+			autoUpdate: true,
+			id: "5652806f-c5f9-4f3e-aa47-b004c6ab2f27",
+			layerId: "MovementAnalysis_4207",
+			mapId: "3f936722-79eb-4bd9-8ae8-8246d54f67e5",
+			name: "Stay Location Point",
+			type: "featureLayerDataSource"
+		},
+		{
+			autoUpdate: false,
+			id: "1d330433-f6e2-4d87-8f62-5ee6c82dd584",
+			name: "Stay Location Point Selection",
+			parentDataSourceId: "5652806f-c5f9-4f3e-aa47-b004c6ab2f27",
+			type: "selectionDataSource"
+		},
+		{
+			autoUpdate: true,
+			id: "919030af-fe14-46bf-9ba9-399b4f82b2ae",
+			layerId: "MovementAnalysis_1614",
+			mapId: "3f936722-79eb-4bd9-8ae8-8246d54f67e5",
+			name: "Stay Location Area",
+			type: "featureLayerDataSource"
+		},
+		{
+			autoUpdate: false,
+			id: "a7b39208-38ee-4394-8cdb-2732d0498af0",
+			name: "Stay Location Area Selection",
+			parentDataSourceId: "919030af-fe14-46bf-9ba9-399b4f82b2ae",
+			type: "selectionDataSource"
+		},
+		{
+			filter: {
+				name: "Unknown Locations",
+				parameters: [],
+				useCurrentExtent: false,
+				whereClause: "locationsource = 'Unknown Location' or locationsource = 'New Location'"
+			},
+			id: "6627be03-7a44-4521-8b7f-44bc3470211e",
+			name: "Unknown Locations",
+			parentDataSourceId: "5652806f-c5f9-4f3e-aa47-b004c6ab2f27",
+			type: "filteredFeatureLayerDataSource"
+		},
+		{
+			filter: {
+				name: "Suspicious Locations",
+				parameters: [],
+				useCurrentExtent: false,
+				whereClause: "locationsource = 'Suspicious Location'"
+			},
+			id: "2bee1b25-132f-4e16-924a-b33a5f122844",
+			name: "Suspicious Locations",
+			parentDataSourceId: "5652806f-c5f9-4f3e-aa47-b004c6ab2f27",
+			type: "filteredFeatureLayerDataSource"
+		},
+		{
+			filter: {
+				name: "Critical Facility Visit",
+				parameters: [],
+				useCurrentExtent: false,
+				whereClause: "locationsource = 'Monitored Location'"
+			},
+			id: "529d2884-85a8-4f19-bd12-842088b07cf8",
+			name: "Critical Facility Visit",
+			parentDataSourceId: "5652806f-c5f9-4f3e-aa47-b004c6ab2f27",
+			type: "filteredFeatureLayerDataSource"
+		},
+		{
+			filter: {
+				name: "Suspicious and Monitored Locations",
+				parameters: [],
+				useCurrentExtent: false,
+				whereClause: "locationsource = 'Suspicious Location' or locationsource = 'Monitored Location'"
+			},
+			id: "0e6c8f9e-e827-490b-956a-da27c8fb3821",
+			name: "Suspicious and Monitored Locations",
+			parentDataSourceId: "5652806f-c5f9-4f3e-aa47-b004c6ab2f27",
+			type: "filteredFeatureLayerDataSource"
+		},
+		{
+			autoUpdate: true,
+			id: "e76d383a-7163-4c4e-9184-dcdd86b7af1d",
+			layerId: "MovementAnalysis_9264",
+			mapId: "3f936722-79eb-4bd9-8ae8-8246d54f67e5",
+			name: "Monitored Locations",
+			type: "featureLayerDataSource"
+		},
+		{
+			autoUpdate: false,
+			id: "e76bf17e-7fd5-4ba1-8935-b8192f65b168",
+			name: "Monitored Locations Selection",
+			parentDataSourceId: "e76d383a-7163-4c4e-9184-dcdd86b7af1d",
+			type: "selectionDataSource"
+		}],
+		showCoordinates: false,
+		showFeaturePopups: false,
+		type: "mapWidget"
+	},
+	{
+		autoSelectTop: false,
+		autoShowMapSelection: false,
+		caption: "Monitored Facilities",
+		dataSourceId: "e76d383a-7163-4c4e-9184-dcdd86b7af1d",
+		doubleClickFeatureAction: {
+			type: "highlightAction",
+			updateExtent: "pan"
+		},
+		enableSearch: false,
+		featureActions: [{
+			type: "showPopupAction"
+		}],
+		iconType: "symbol",
+		id: "d8dd5e95-5587-49e8-9e9e-f1796d89e774",
+		itemDescriptionField: "objectid",
+		itemDescriptionType: "none",
+		itemTitle: "{locationname}",
+		maxCount: 20,
+		selectionDataSource: {
+			autoUpdate: false,
+			id: "0c3cb252-dd43-4a51-9a93-c9425a3f4a71",
+			name: "Monitored Locations Selection",
+			type: "widgetDataSource"
+		},
+		selectionMode: "single",
+		sortField: "objectid",
+		sortOrder: "asc",
+		topDataSource: {
+			autoUpdate: false,
+			id: "dc7753d9-b094-46ef-bc7e-8c61defc0440",
+			name: "Monitored Locations Top",
+			type: "widgetDataSource"
+		},
+		type: "listWidget"
+	},
+	{
+		caption: "Suspicious Location Frequented",
+		clickFeatureAction: {
+			type: "highlightAction",
+			updateExtent: "pan"
+		},
+		colors: [[108,
+		180,
+		226,
+		255],
+		[127,
+		121,
+		74,
+		255],
+		[255,
+		149,
+		0,
+		255],
+		[0,
+		94,
+		149,
+		255],
+		[149,
+		105,
+		42,
+		255],
+		[72,
+		151,
+		200,
+		255],
+		[235,
+		167,
+		72,
+		255],
+		[36,
+		122,
+		174,
+		255],
+		[202,
+		146,
+		74,
+		255],
+		[255,
+		168,
+		53,
+		255]],
+		cutoff: 20,
+		dataSourceId: "0e6c8f9e-e827-490b-956a-da27c8fb3821",
+		displayType: "uniqueValues",
+		featureActions: [],
+		fields: ["locationid"],
+		id: "0e9e5283-5abe-41bd-9b5f-6a6d79f107cf",
+		showLabels: true,
+		sortOrder: "asc",
+		statistic: "avg",
+		type: "pieChartWidget"
+	},
+	{
+		caption: "Query Stay Locations",
+		dataSourceId: "5652806f-c5f9-4f3e-aa47-b004c6ab2f27",
+		description: "Query Stay Locations for pattern information",
+		id: "ebce88eb-3da2-40b5-a95a-0514cb1de172",
+		queries: [{
+			name: "Suspicious Location by Person",
+			parameters: [{
+				dateValueType: "absolute",
+				defaultValue: "Rob",
+				field: "individualid",
+				helpTip: "Rob",
+				operator: "like",
+				prompt: "Individual ID",
+				relativeDateType: "past",
+				relativeDateUnit: "minutes",
+				subtypeId: "Suspicious Location"
+			}],
+			useCurrentExtent: false,
+			whereClause: "(locationsource = 'Suspicious Location' and {0})"
+		},
+		{
+			name: "Natalies Locations",
+			parameters: [],
+			useCurrentExtent: false,
+			whereClause: "individualid like '%Natalie%'"
+		},
+		{
+			name: "Rob's Locations",
+			parameters: [],
+			useCurrentExtent: false,
+			whereClause: "individualid like '%Rob%'"
+		}],
+		resultsDataSource: {
+			autoUpdate: false,
+			id: "12b7b72c-b252-4f1b-a2cb-9afb6059b9e8",
+			name: "Query Stay Locations Results",
+			type: "queryWidgetDataSource"
+		},
+		type: "queryWidget"
+	},
+	{
+		autoSelectTop: true,
+		autoShowMapSelection: false,
+		caption: "Unknown Locations",
+		dataSourceId: "6627be03-7a44-4521-8b7f-44bc3470211e",
+		description: "Unknown Locations Recently Visited",
+		enableSearch: false,
+		featureActions: [],
+		iconType: "symbol",
+		id: "b4fff776-271d-464e-ad12-ba10d4295beb",
+		itemDescription: "{locationid} &nbsp;{locationsource}",
+		itemDescriptionField: "locationid",
+		itemDescriptionType: "custom",
+		itemTitle: "{individualid}",
+		maxCount: 20,
+		selectionDataSource: {
+			autoUpdate: false,
+			id: "fd82b1cf-b7d8-4944-a66c-23c97c793172",
+			name: "Unknown Locations Selection",
+			type: "widgetDataSource"
+		},
+		selectionMode: "single",
+		sortField: "endtime",
+		sortOrder: "desc",
+		type: "listWidget"
+	},
+	{
+		caption: "Pattern Activity",
+		clickFeatureAction: {
+			type: "highlightAction",
+			updateExtent: "pan"
+		},
+		colors: [[79,
+		129,
+		189,
+		255]],
+		cutoff: 20,
+		dataSourceId: "2bee1b25-132f-4e16-924a-b33a5f122844",
+		description: "Activity at Suspicious Locations",
+		displayType: "uniqueValues",
+		featureActions: [],
+		fields: ["locationid"],
+		id: "4514b17b-455c-471c-b116-40921d0ded95",
+		layout: "verticalBars",
+		maxValue: {
+			type: "computed",
+			value: 10
+		},
+		minValue: {
+			type: "explicit"
+		},
+		showLabels: true,
+		showLegend: false,
+		showTicks: false,
+		sortOrder: "desc",
+		statistic: "sum",
+		type: "barChartWidget",
+		uniqueValuesSortType: "frequency"
+	},
+	{
+		autoSelectTop: true,
+		autoShowMapSelection: false,
+		caption: "Monitored Location Alert",
+		dataSourceId: "529d2884-85a8-4f19-bd12-842088b07cf8",
+		description: "Alert for Monitored Locaiton Visit",
+		enableSearch: false,
+		featureActions: [],
+		iconType: "symbol",
+		id: "24dda80a-69aa-4869-b47a-4a4e67504d6c",
+		itemDescriptionField: "individualid",
+		itemDescriptionType: "singleField",
+		itemTitle: "{locationid}",
+		maxCount: 20,
+		selectionDataSource: {
+			autoUpdate: false,
+			id: "1e391af8-fce7-4762-93a3-7f5194d650c0",
+			name: "Critical Facility Visit Selection",
+			type: "widgetDataSource"
+		},
+		selectionMode: "single",
+		sortField: "starttime",
+		sortOrder: "desc",
+		type: "listWidget"
+	},
+	{
+		caption: "Monitored Stay Location",
+		coordinateNotation: "esriLatLong",
+		dataSourceId: "1e391af8-fce7-4762-93a3-7f5194d650c0",
+		featureActions: [],
+		id: "17a05e74-ba14-48ad-8c10-db73726a830d",
+		popupInfo: {
+			fieldInfos: [{
+				fieldName: "objectid",
+				isEditable: false,
+				label: "OBJECTID",
+				visible: false
+			},
+			{
+				fieldName: "locationscale",
+				stringFieldOption: "textbox",
+				isEditable: false,
+				label: "Location Scale",
+				visible: false
+			},
+			{
+				fieldName: "locationid",
+				stringFieldOption: "textbox",
+				isEditable: true,
+				label: "Location ID",
+				visible: true
+			},
+			{
+				fieldName: "previouslocaitonid",
+				stringFieldOption: "textbox",
+				isEditable: true,
+				label: "Previous Locaiton ID",
+				visible: true
+			},
+			{
+				fieldName: "starttime",
+				format: {
+					dateFormat: "shortDateShortTime"
+				},
+				isEditable: true,
+				label: "Start Time",
+				visible: true
+			},
+			{
+				fieldName: "endtime",
+				format: {
+					dateFormat: "shortDateShortTime"
+				},
+				isEditable: true,
+				label: "End Time",
+				visible: true
+			},
+			{
+				fieldName: "duration",
+				format: {
+					places: 0,
+					digitSeparator: true
+				},
+				isEditable: true,
+				label: "Duration",
+				visible: false
+			},
+			{
+				fieldName: "locationcertainty",
+				format: {
+					places: 0,
+					digitSeparator: true
+				},
+				isEditable: false,
+				label: "Location Certainty",
+				visible: false
+			},
+			{
+				fieldName: "valuecertainty",
+				format: {
+					places: 0,
+					digitSeparator: true
+				},
+				isEditable: false,
+				label: "Value Certainty",
+				visible: false
+			},
+			{
+				fieldName: "movementpattern",
+				stringFieldOption: "textbox",
+				isEditable: false,
+				label: "Movement Pattern",
+				visible: false
+			},
+			{
+				fieldName: "locationsource",
+				stringFieldOption: "textbox",
+				isEditable: true,
+				label: "Location Source",
+				visible: true
+			},
+			{
+				fieldName: "individualid",
+				stringFieldOption: "textbox",
+				isEditable: true,
+				label: "Individual ID",
+				visible: true
+			},
+			{
+				fieldName: "source",
+				stringFieldOption: "textbox",
+				isEditable: true,
+				label: "Source",
+				visible: true
+			},
+			{
+				fieldName: "combinedid",
+				stringFieldOption: "textbox",
+				isEditable: true,
+				label: "Combined ID",
+				visible: false
+			},
+			{
+				fieldName: "sourcetype",
+				stringFieldOption: "textbox",
+				isEditable: true,
+				label: "Source Type",
+				visible: true
+			}],
+			showAttachments: false,
+			title: "{individualid} at Stay Location {locationid}"
+		},
+		showCoordinates: false,
+		type: "featureDetailsWidget"
+	}]
+}
