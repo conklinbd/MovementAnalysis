@@ -21,7 +21,7 @@ The Movement Analysis service contains all the layers for analysis and visualiza
 Use the MovementAnalysis.mxd found in TemplateInstall/Maps to publish the Movement Analysis map service. Complete the following steps:
 
 *   **Title:**MovementAnalysis
-*   **Thumbnail image:** ![](/defense/templates/movement-analysis/img/WebMapThumb.png)
+*   **Thumbnail image:** ![](WebMapThumb.png)
 *   **Summary:** The movement analysis service presents a real time picture about movement of individuals or groups.
 *   **Description:** The movement analysis service is used to depict derived information about the movement of individuals or group. The information in this service is the result of real-time analysis of patterns of movement. This information can be used to visualize and understand the patterns of activity or be used to alert for activity around monitored locations. This service includes several key layers which are used to normalize complex movement data and prepare it for visualization or analysis. This include:
     *   Stay Locations – Point and Polygon layers which represent any location where a monitored individual spends any amount of time.
