@@ -94,38 +94,14 @@ II.  Import Configuration Store
          
       C.  Save Output
 
-   7.  Validate Installation
+   7. If you are using the Twitter Input, Set the Twitter Input to your developer API key and conumer key. 
+   
+   8.  Validate Installation
    
       A.  Validate Inputs
       B.  Validate Ouputs
       C.  Validate Services
 
-# Publish Maps and Dashboard
 
-
-The Movement Analysis template includes a web map, a single monitor and multi-monitor dashboard view. Following the steps bellow will copy these maps and views to your ArcGIS Online or Portal Account.
-
-#### Movement Analysis dashboard
-
-To configure a Movement Analysis Dashboard, complete the following steps:
-
-##### Note
-It is recommended you edit the JSON configuration files in an editor that recognizes JSON formatting or an online JSON editor.
-
-1.  In Window Explorer, browse to TemplateInstall/PortalDeploy > configs.
-2.  Open the GlobalLoginInfo JSON file using your preferred text editor.
-3.  Update the file with the credentials for your ArcGIS organizational account.
-4.  Save changes before exiting.
-
-#### Stage app
-
-To update the stage app config, complete the following steps:
-
-1.  In Windows Explorer, browse to > TemplateInstall/PortalDeploy > configs.
-2.  Open the StageApp JSON file using Windows Notepad or your preferred text editor.
-3.  Update the **ReplaceString** with the REST URL to your Movement Analysis service.
-4.  Save changes before exiting.
-5.  When both configuration files are updated, run the **StageApp.py** script.
-6.  The Movement Analysis dashboard will be located in your ArcGIS Online content folder "Movement Analysis."
 
 
