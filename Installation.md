@@ -38,9 +38,9 @@ Use the MovementAnalysis.mxd found in TemplateInstall/Maps to publish the Moveme
 The Movement Analysis Template includes a number of predefined services for use with the GeoEvent Extension for ArcGIS Server. Follow these steps to get these services deployed and operational on your Server. You will need Admin access to your GeoEvent Server in order to perform these steps
 
 I.  Deploy Custom Components
-##### Note:
-
-If you have already deployed the GeoEvent Extension custom Component for ArcGIS Solutions you can skip this step. Detailed instructions are available for [Deploying Custom Component to GeoEvent](https://solutions.arcgis.com/defense/templates/geoevent-extension/get-started/install-components/)
+         ##### Note:
+         
+         If you have already deployed the GeoEvent Extension custom Component for ArcGIS Solutions you can skip this step. Detailed instructions are available for [Deploying Custom Component to GeoEvent](https://solutions.arcgis.com/defense/templates/geoevent-extension/get-started/install-components/)
 
    1.  Deploy Twitter Transport. Located in TemplateInstall\GeoEventExtension\Components\Transports
    2.  Deploy Twitter Adaptor. TemplateInstall\GeoEventExtension\Components\Adaptors
@@ -61,7 +61,7 @@ II.  Import Configuration Store
          You may have errors after the import related to the Twitter Definition. You can ignore this error.
    
    3.  After the Import Completes navigate to the **Data Stores** Tab. Located under Site > GeoEvent in GeoEvent Manager.
-   4.  Edit the Data Stores property to point your ArcGIS for Server instance where you published the Movement Feature Services
+   4.  Edit the OpsServer Data Stores property to point your ArcGIS for Server instance where you published the Movement Feature Services. Repair the default data store to point to your default portal
    
    5.  Publish Stay Location Stream Service
 
@@ -69,9 +69,14 @@ II.  Import Configuration Store
       B.  Choose Publish Stream Service
       
          *   Name: Movement-NewStayLocations
-         *   Cluster Name: default
-         *   Store Latest: Unchecked
          *   Geometry Type: Polygon
+         *   Display Field Name: locationname
+         *   Store Latest: Checked
+         *   Override: Unchecked
+         *   Store Latest: Unchecked
+         
+         
+   
       
       C.  Save Output
       
@@ -81,9 +86,11 @@ II.  Import Configuration Store
       B.  Choose **Publish Stream Service**
       
          *   Name: Movement-GPSStream
-         *   Cluster Name: default
-         *   Store Latest: Unchecked
          *   Geometry Type: Point
+         *   Display Field Name: individualid
+         *   Store Latest: Checked
+         *   Override: Unchecked
+         *   Store Latest: Unchecked
          
       C.  Save Output
 
