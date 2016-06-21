@@ -102,6 +102,9 @@ II.  Import Configuration Store
       B.  Validate Ouputs
       C.  Validate Services
 
-
+   9. On the machine with GeoEvent Server installed, run the simulation file for GPS Movement and Observations
+      A. Navigate to Template Install -> GeoEvent Compontents -> Simulation 
+      B. Run the Movement.bat file with elevated permissions.
+   10. You should see everything except voluteer locations increaing in reporting. Review the GeoEvent logs for possible issues. 
 
 
